@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  font-family: 'Belgrano', serif;
+  color: white;
+  background: #c33764;
+  background: -webkit-linear-gradient(
+      rgba(29, 38, 113, 0.8),
+      rgba(195, 55, 100, 0.8)
+    ),
+    url('images/comics-avengers.jpg');
+  background: linear-gradient(rgba(29, 38, 113, 0.6), rgba(195, 55, 100, 0.6)),
+    url('images/comics-avengers.jpg');
+  /* The least supported option. */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#heading {
+  font-family: 'Lobster', cursive;
+}
+
+#displayHeroSearchResults {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.loading-and-error-font {
+  font-family: 'PT Mono', monospace;
+  letter-spacing: 2px;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+::placeholder {
+  color: rgb(84, 84, 90);
+  font-family: 'Belgrano', serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#heading {
+  font-size: 5rem;
+  letter-spacing: 8px;
+  font-weight: 900;
+}
+#info {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-family: cursive;
+}
+
+#searchHeroBar {
+  margin-top: 1%;
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#searchHero {
+  position: relative;
+  width: 100%;
+  padding: 3%;
+  height: 2%;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgb(239, 236, 236);
+}
+
+#displayHeroSearchResults {
+  flex-direction: row;
+  width: 80%;
+  margin: 2%;
+}
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 1%;
+  margin: 2%;
+  height: 20%;
+  background-color: white;
+  color: black;
+  border-radius: 17px;
+}
+
+.hero-card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px 3px lightcyan;
+}
+
+.hero-card img {
+  width: 160px;
+  margin-top: 2%;
+  height: 160px;
+  border-radius: 13px;
+  box-shadow: 0 0 50px lightgrey;
+}
+
+.fav-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  padding: 3%;
+  font-size: 0.7em;
+  font-family: 'Belgrano', serif;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(196 65 139);
+}
+#container {
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headernav {
+  display: flex;
+  padding: 10px;
+  background-color: #dcdaf04a;
+  justify-content: space-between;
+}
+.headernav span {
+  font-weight: bold;
+  font-size: 29px;
+}
+.headernav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.headernav li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.container #info {
+  font-family: cursive;
+}
+
+@media only screen and (max-width: 900px) {
+  #info {
+    /* font-family: 'Pacifico', cursive; */
+    font-family: cursive;
+  }
+
+  #container {
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #searchHeroBar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    width: auto;
+  }
+  #searchHero {
+    padding: 3%;
+    height: 2%;
+    font-size: 1.5rem;
+    width: 124%;
+    border-radius: 30px;
+  }
+}

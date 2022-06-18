@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: 'Belgrano', serif;
+  color: white;
+  background: #c33764;
+  background: -webkit-linear-gradient(
+      rgba(29, 38, 113, 0.8),
+      rgba(195, 55, 100, 0.8)
+    ),
+    url('images/comics-avengers.jpg');
+  background: linear-gradient(rgba(29, 38, 113, 0.6), rgba(195, 55, 100, 0.6)),
+    url('images/comics-avengers.jpg');
+  /* The least supported option. */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#name-and-appearance-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#name-and-aka {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  text-decoration: none;
+}
+#heading {
+  text-align: center;
+  font-family: 'Belgrano', sans-serif;
+  padding: 2%;
+  width: 80%;
+  height: 3%;
+  font-size: 3rem;
+}
+@media only screen and (max-width: 900px) {
+  #powerstats-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+    position: relative;
+    width: 50%;
+    height: 20%;
+    background-color: aliceblue;
+    color: #c33764;
+    margin: 1%;
+    border-radius: 10px;
+  }
+  #about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1%;
+    padding: 3%;
+  }
+  #imageOfSuperHero {
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+    box-shadow: 0 0 50px lightgrey;
+  }
+  #appearance-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+  }
+  #name-and-appearance-container {
+    margin: 2.5%;
+    padding: 1%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #container {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    margin-top: 1%;
+    padding: 1%;
+  }
+
+  #powerstats-container {
+    padding: 1%;
+    position: relative;
+    width: 80%;
+    height: 20%;
+    background-color: aliceblue;
+    color: #c33764;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .powerstats {
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .profileItems {
+    display: flex;
+    flex-direction: column;
+  }
+  #about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+    margin: 2%;
+    padding: 1%;
+    margin: 1%;
+  }
+  #imageOfSuperHero {
+    width: 300px;
+    height: 328px;
+    border-radius: 7px;
+    box-shadow: 0 0 50px lightgrey;
+  }
+  #name-and-appearance-container {
+    width: 70%;
+  }
+  #alignment {
+    margin-left: -50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+  #hero-name {
+    font-size: 2.3rem;
+  }
+  #aka {
+    font-size: 2.3rem;
+  }
+  #real-name {
+    font-size: 2.3rem;
+  }
+  #appearance-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+  }
+  .appearance {
+    font-size: 1.5rem;
+    padding: 6px;
+  }
+  .titleappearance {
+    font-size: 1.5rem;
+    padding: 6px;
+    display: flex;
+  }
+  .nametitle {
+    font-size: 2.3rem;
+  }
+  .appearancediv {
+    text-align: center;
+  }
+}
+
+.headernav {
+  display: flex;
+  padding: 10px;
+  background-color: #dcdaf04a;
+  justify-content: space-between;
+}
+.headernav span {
+  font-weight: bold;
+  font-size: 24px;
+}
+.headernav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.headernav li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.profilecolor {
+  color: #c33764;
+}
+.textalign {
+  text-align: center;
+}
+.hero-image-class {
+  margin: 1%;
+}

@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: 'Belgrano', serif;
+  color: white;
+  background: #c33764;
+  background: -webkit-linear-gradient(
+      rgba(29, 38, 113, 0.8),
+      rgba(195, 55, 100, 0.8)
+    ),
+    url('images/comics-avengers.jpg');
+  background: linear-gradient(rgba(29, 38, 113, 0.6), rgba(195, 55, 100, 0.6)),
+    url('images/comics-avengers.jpg');
+  /* The least supported option. */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#heading {
+  text-align: center;
+  font-family: 'Belgrano', sans-serif;
+  padding: 2%;
+  width: 80%;
+  height: 3%;
+  font-size: 3rem;
+}
+
+#displayFavourites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+#displayFavourites {
+  flex-direction: row;
+  width: 90%;
+}
+
+.favourite-hero-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 1%;
+  margin: 2%;
+  height: 20%;
+  background-color: white;
+  color: black;
+  border-radius: 17px;
+}
+
+.favourite-hero-card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px 3px lightcyan;
+}
+
+.favourite-hero-card img {
+  width: 150px;
+  margin-top: 2%;
+  height: 150px;
+  border-radius: 100px;
+  box-shadow: 0 0 50px lightgrey;
+}
+
+.del-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  padding: 3%;
+  font-size: 0.7em;
+  font-family: 'Belgrano', serif;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(196 65 139);
+}
+
+.del-btn:hover {
+  cursor: grabbing;
+}
+
+.headernav {
+  display: flex;
+  padding: 10px;
+  background-color: #dcdaf04a;
+  justify-content: space-between;
+}
+.headernav span {
+  font-weight: bold;
+  font-size: 24px;
+}
+.headernav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.headernav li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}

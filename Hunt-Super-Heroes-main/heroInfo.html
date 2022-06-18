@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/styleHeroInfo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belgrano&family=Comforter+Brush&family=Dancing+Script:wght@500&family=Dawning+of+a+New+Day&family=Lobster&family=Fuzzy+Bubbles&family=Pacifico&family=Sedgwick+Ave&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <title>Superheroes</title>
+    <script
+      src="https://kit.fontawesome.com/c4d008f503.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scriptHeroInfo.js" defer></script>
+  </head>
+  <body>
+  
+    <div id="header" class="headernav">
+      <span> <a href="index.html"> &lt; Go back to Home</a> </span>
+      <ul>
+        <li>
+          <a href="favouritesuperHeroes.html">
+            Favourites <i class="far fa-heart"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="container">
+      <div id="heading">Profile Details</div>
+      <div id="powerstats-container">
+        <div id="intelligence" class="profileItems">
+          <span class="powerstats"> Intelligence </span>
+          <span id="intelligence_stats" class="powerstats textalign">90 </span>
+        </div>
+        <div id="strength" class="profileItems">
+          <span class="powerstats"> Strength </span>
+          <span id="strength_stats" class="powerstats textalign"> 89</span>
+        </div>
+        <div id="speed" class="profileItems">
+          <span class="powerstats"> Speed </span>
+          <span id="speed_stats" class="powerstats textalign">74 </span>
+        </div>
+        <div id="durability" class="profileItems">
+          <span class="powerstats"> Durability </span>
+          <span id="durability_stats" class="powerstats textalign"> 8</span>
+        </div>
+        <div id="power" class="profileItems">
+          <span class="powerstats"> Power </span>
+          <span id="power_stats" class="powerstats textalign"> 56</span>
+        </div>
+        <div id="combat" class="profileItems">
+          <span class="powerstats"> Combat </span>
+          <span id="combat_stats" class="powerstats textalign">78 </span>
+        </div>
+      </div>
+        <div
+          id="about-container"
+          style="background-color: whitesmoke; color: black;border-radius: 10px;"
+        >
+          <div id="hero-image" class="hero-image-class">
+            <img
+              id="imageOfSuperHero"
+              src=""
+              alt="image"
+            />
+          </div>
+         
+          <div id="name-and-appearance-container">
+            <div id="name-and-aka">
+                <div>
+                <span class="nametitle"> Name :</span>
+              <span id="hero-name"></span>
+            </div>
+            <div>
+              <span id="aka"> Real Name: </span>
+              <span id="real-name"></span>
+            </div>
+           
+            </div>
+            <div id="appearance-container">
+              <div id="gender" class="appearancediv">
+                <span class="titleappearance"> Gender </span>
+                <span id="gender-display" class="appearance profilecolor"></span>
+              </div>
+              <div id="race" class="appearancediv">
+                <span class="titleappearance"> Race </span>
+                <span id="race-display" class="appearance profilecolor"></span>
+              </div>
+              <div id="height" class="appearancediv">
+                <span class="titleappearance"> Height </span>
+                <span id="height-display" class="appearance profilecolor"></span>
+              </div>
+              <div id="weight" class="appearancediv">
+                <span class="titleappearance"> Weight </span>
+                <span id="weight-display" class="appearance profilecolor"></span>
+              </div>
+              <div id="eye-color" class="appearancediv">
+                <span class="titleappearance"> Eyes </span>
+                <span id="eye-color-display" class="appearance profilecolor"></span>
+              </div>
+              <div id="hair-color" class="appearancediv">
+                <span class="titleappearance"> Hair</span>
+                <span id="hair-color-display" class="appearance profilecolor"></span>
+              </div>
+            </div>
+
+            <div>
+                <span id="worktitle" class="appearance"> Work: </span>
+                <span id="work" class="appearance"></span>
+              </div>
+              <div>
+                <span id="deedstitle" class="appearance"> Deeds: </span>
+                <span id="deeds" class="appearance"></span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

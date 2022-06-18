@@ -13,6 +13,7 @@ body {
   /* The least supported option. */
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 #heading {
   font-family: 'Lobster', cursive;

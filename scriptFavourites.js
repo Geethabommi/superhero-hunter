@@ -56,7 +56,7 @@ for (let hero_id of arr) {
 
       delBtn.className = 'del-btn';
       delBtn.innerHTML =
-        '<span> Remove  <i class = "fas fa-trash"> </i> </span>';
+        '<span> Remove  <i class = "fa fa-trash"> </i> </span>';
       delBtn.onclick = function (event) {
         deleteHeroFromFavourites(event, hero_id, favHeroCard.id);
       };

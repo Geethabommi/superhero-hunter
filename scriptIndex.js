@@ -44,12 +44,12 @@ function getSearchedSuperHeroes() {
     if (this.readyState == 4 && this.status == 200) {
       //fetching data from the api in data variable
       var data = JSON.parse(this.responseText);
-      console.log(data, typeof data);
-      console.log(
-        data.filter((e) =>
-          e.name?.toLowerCase().startsWith(searchBar.value?.toLowerCase())
-        )
-      );
+      // console.log(data, typeof data);
+      // console.log(
+      //   data.filter((e) =>
+      //     e.name?.toLowerCase().startsWith(searchBar.value?.toLowerCase())
+      //   )
+      // );
       data = data.filter((e) =>
         e.name?.toLowerCase().startsWith(searchBar.value?.toLowerCase())
       );
@@ -101,14 +101,14 @@ function getSearchedSuperHeroes() {
             favButton.style.backgroundColor = 'white';
 
             favButton.innerHTML =
-              '<span> Favourite <i class = "fas fa-heart"></i> </span> ';
+              '<span> Favourite <i class = "fa fa-heart"></i> </span> ';
           } else {
             favButton.style.color = 'white';
 
             favButton.style.backgroundColor = '#c4418b';
 
             favButton.innerHTML =
-              '<span> Add to Favourites <i class = "fas fa-heart"></i> </span> ';
+              '<span> Add to Favourites <i class = "fa fa-heart"></i> </span> ';
           }
 
           //onClicking, remove or add superhero from favourites
@@ -143,14 +143,14 @@ function toggleFavourite(event, heroID, favButton) {
     favButton.style.color = 'white';
     favButton.style.backgroundColor = '#c4418b';
     favButton.innerHTML =
-      '<span> Add to Favourites </span> <i class = "fas fa-heart"></i>';
+      '<span> Add to Favourites </span> <i class = "fa fa-heart"></i>';
   } else {
     favButton.style.color = '#c4418b';
 
     favButton.style.backgroundColor = 'white';
 
     favButton.innerHTML =
-      '<span> Favourite </span> <i class = "fas fa-heart"></i>';
+      '<span> Favourite </span> <i class = "fa fa-heart"></i>';
     data.push(heroID);
   }
   myLocalStorage.setItem('superheroID', JSON.stringify(data));

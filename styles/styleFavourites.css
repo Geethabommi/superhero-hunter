@@ -101,7 +101,7 @@ a:active {
 }
 
 .del-btn:hover {
-  cursor: grabbing;
+  /* cursor: grabbing; */
 }
 
 .headernav {
